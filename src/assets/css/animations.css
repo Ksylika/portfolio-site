@@ -1,0 +1,94 @@
+/* Animation Keyframes */
+@keyframes fill-progress {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes button-glow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 var(--accent-devops), -0.05em -0.025em 0 var(--accent-fullstack);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 0% 25%);
+    }
+    25% {
+        text-shadow: 0.05em 0 0 var(--accent-devops), -0.05em -0.025em 0 var(--accent-fullstack);
+        clip-path: polygon(0% 25%, 100% 25%, 100% 50%, 0% 50%);
+    }
+    50% {
+        text-shadow: -0.05em -0.025em 0 var(--accent-devops), 0.025em 0.05em 0 var(--accent-fullstack);
+        clip-path: polygon(0% 50%, 100% 50%, 100% 75%, 0% 75%);
+    }
+    75% {
+        text-shadow: -0.05em -0.025em 0 var(--accent-devops), 0.025em 0.05em 0 var(--accent-fullstack);
+        clip-path: polygon(0% 75%, 100% 75%, 100% 100%, 0% 100%);
+    }
+    100% {
+        text-shadow: 0.05em 0 0 var(--accent-devops), -0.05em -0.025em 0 var(--accent-fullstack);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.loading-cube {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--accent-current);
+    animation: rotate 2s linear infinite;
+}
+
+.glitch-text {
+    position: relative;
+    animation: glitch 3s infinite;
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+/* Staggered Animations */
+.stagger-item {
+    opacity: 0;
+}
+
+.stagger-visible {
+    animation: fadeInUp 0.8s ease forwards;
+}
