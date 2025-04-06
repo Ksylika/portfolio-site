@@ -1,30 +1,56 @@
-# portfolio-test
+# Сайт-портфолио
 
-This template should help get you started developing with Vue 3 in Vite.
+[![Demo](https://img.shields.io/badge/demo-live-green.svg)](https://dev-zagrebin.ru)
 
-## Recommended IDE Setup
+Современный сайт-портфолио, созданный с использованием Vue.js и Vite, демонстрирующий навыки, проекты и профессиональный опыт.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ Особенности
 
-## Customize configuration
+- Интерактивный интерфейс с анимациями и эффектами частиц
+- Адаптивный дизайн
+- Несколько разделов:
+  - О себе
+  - Навыки
+  - Опыт работы
+  - Проекты
+  - Контакты
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Используемые технологии
 
-## Project Setup
+- Vue.js
+- Vite
+- JavaScript
+- CSS3
+- Particles.js
 
-```sh
-npm install
-```
+## 📁 Структура проекта
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-# portfolio-site
+PORTFOLIO-TEST/
+├── public/               # Публичные статические ресурсы
+│   └── favicon.ico
+├── src/                  # Исходный код
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── animations.css
+│   │   │   └── main.css
+│   │   ├── img/          # Изображения
+│   │   └── js/
+│   │       ├── animations.js
+│   │       └── particles-config.js
+│   ├── components/       # Компоненты Vue
+│   │   ├── About.vue
+│   │   ├── Contact.vue
+│   │   ├── Experience.vue
+│   │   ├── Header.vue
+│   │   ├── Projects.vue
+│   │   └── Skills.vue
+│   ├── App.vue           # Главный компонент приложения
+│   └── main.js           # Точка входа в приложение
+├── .gitignore            # Файл gitignore
+├── index.html            # HTML точка входа
+├── package.json          # Метаданные проекта и зависимости
+├── package-lock.json     # Фиксация версий зависимостей
+├── README.md             # Документация проекта
+├── vite.config.js        # Конфигурация Vite
+└── jsconfig.json         # Конфигурация JavaScript
